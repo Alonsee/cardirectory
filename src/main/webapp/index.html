@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cars</title>
+    </head>
+
+    <body>
+        <div>
+            <form class = 'searchForm'>
+                <div>
+	                <label>Manufacturer</label>
+	                <input type = 'text' name = 'manufacturer'>
+	            </div>
+	            <div>
+	                <label>Model</label>
+	                <input type = 'text' name = 'model'>
+                </div>
+                <div>
+	                <label>Color</label>
+	                <input type = 'text' name = 'color'>
+                </div>
+                <div>
+	                <label>Release year</label>
+	                <input type = 'text' name = 'year'>
+                </div>
+                <div>
+	                <label>Order by</label>
+	                <select name='orderby'>
+					    <option value="carManufacturer" selected>manufacturer</option>
+					    <option value="carModel">model</option>
+					    <option value="carColor">color</option>
+					    <option value="carReleaseYear">year</option>
+					</select>
+				</div>	
+                <input type = 'button' value = 'search' name = 'searchBtn'></input>
+            </form>
+            
+            <table class='content'>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Manufacturer</th>
+                        <th>Model</th>
+                        <th>Color</th>
+                        <th>Release year</th>
+                    </tr>    
+                </thead>
+            </table>
+        </div>
+        
+        <br>
+        
+        <div class = "add">
+            <form class = 'addForm'>
+            	<div>
+	                <label>Manufacturer</label>
+	                <input type = 'text' name = 'manufacturer'>
+	            </div>
+	            <div>
+	                <label>Model</label>
+	                <input type = 'text' name = 'model'>
+                </div>
+                <div>
+	                <label>Color</label>
+	                <input type = 'text' name = 'color'>
+                </div>
+                <div>
+	                <label>Release year</label>
+	                <input type = 'text' name = 'year'>
+                </div>
+                <input type = 'button' value = 'add' name = 'addBtn'></input>
+            </form>
+        </div>  
+          
+        <br>
+        
+        <div class = 'del'>
+            <form class = 'deleteForm'>
+                <input type = 'number' name = 'deletedId'>
+                <input type = 'button' value = 'delete' name = 'deleteBtn'></input>
+            </form>
+        </div>
+        
+        </div>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.js"></script>    
+    <script src="/js/index.js"></script>    
+    </body>
+</html>
