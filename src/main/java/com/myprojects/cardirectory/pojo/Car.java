@@ -12,8 +12,13 @@ import javax.persistence.TemporalType;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+/**
+ * Класс автомобиля со свойствами
+ * производителя, модели, цвета, года выпуска,
+ * идентификатора в базе данных и даты создания записи
+ */
 @Entity
-@Table(name="cars")
+@Table(name = "cars")
 public class Car {
     
     @Id

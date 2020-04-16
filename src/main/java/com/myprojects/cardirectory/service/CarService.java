@@ -15,6 +15,6 @@ public interface CarService {
     
     public void deleteCar(long id);
     
-    public Map<String, String> getStatistics();
+    public Map<String, Object> getStatistics();
 
 }
